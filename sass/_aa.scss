@@ -1,0 +1,47 @@
+header {
+    position:  relative;
+    width: 100%;
+    nav {
+
+        .sub-menu {
+            display: block;
+        }
+
+        div {
+            div {
+                &>ul {
+                    &>.has-child {
+                        &>.sub-menu {
+                            width: 13rem;
+                            padding: 1rem;
+                            z-index: 10;
+                            right: auto;
+                            background-color: white;
+                            box-shadow: -2px 2px 7px black;
+                            display: none;
+                            flex-wrap: wrap;
+                            position: absolute;
+
+                            &>.has-child {
+                                width: 33.33333333%;
+                            }
+                        }
+
+                        &:hover {
+                            &>.sub-menu {
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &>ul:nth-child(2) {
+            .sub-menu {
+                right: auto;
+                left: auto;
+            }
+        }
+    }
+}
